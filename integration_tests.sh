@@ -1,8 +1,8 @@
 #!/bin/bash
 
-FIRST_CURL_RESULT = $(curl http://127.0.0.1:5002/)
+$FIRST_CURL_RESULT = $(curl http://127.0.0.1:5002/)
 
-SECOND_CURL_RESULT = $(curl http://127.0.0.1:5002/)
+$SECOND_CURL_RESULT = $(curl http://127.0.0.1:5002/)
 
 if ["$FIRST_RESULT" = "Hello World! I have been seen 1 times."]
 	then 
