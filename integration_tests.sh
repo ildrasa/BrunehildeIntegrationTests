@@ -11,8 +11,10 @@ if [ "$FIRST_CURL_RESULT" = "$EXPECTED_FIRST_CURL" ]
 			then
 				exit 0
 			else
-				exit -1
+				echo "fail expected $EXPECTED_SECOND_CURL returned $SECOND_CURL_RESULT"
+				exit 1
 		fi
 	else
-		exit -1
+		echo "fail expected $EXPECTED_FIRST_CURL returned $FIRST_CURL_RESULT"
+		exit 1
 fi
