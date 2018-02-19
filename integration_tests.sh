@@ -9,6 +9,7 @@ if [ "$FIRST_CURL_RESULT" = "$EXPECTED_FIRST_CURL" ]
 	then 
 		if [ "$SECOND_CURL_RESULT" = "$EXPECTED_SECOND_CURL" ]
 			then
+				echo "tests passed"
 				exit 0
 			else
 				echo "fail expected $EXPECTED_SECOND_CURL returned $SECOND_CURL_RESULT"
